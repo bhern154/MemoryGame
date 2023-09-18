@@ -20,7 +20,7 @@ function initializeGame(){
   colorsMatched = [];
   numOfColors = 8;
   input = document.querySelector(".card-input");
-  
+
   startGame = document.querySelector("#startGame");
   startGame.addEventListener('submit', function(e){
     e.preventDefault();
