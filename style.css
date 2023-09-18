@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+body{
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  /* min-height:100vh; */
+  text-align: center;
+  align-items: center;
+}
+/* #menu-sec{
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  text-align: center;
+  align-items: center;
+} */
+.fullHeight{
+  min-height:100vh;
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  text-align: center;
+  align-items: center;
+}
+.menu-title{
+  font-size: 85px;
+  font-weight: 900;
+  line-height: 100px;
+  letter-spacing: 10px;
+}
+.card-title{
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 100px;
+  letter-spacing: 3px;
+}
+input.card-input{
+  width: 90px;
+  height: 90px;
+  /* padding: 20px; */
+  margin-top: 70px;
+  border-radius: 20px;
+  border-color: rgb(12, 70, 152);
+  border-style: solid;
+  text-align: center;
+  color: rgb(12, 70, 152);
+  font-size: 30px;
+}
+input.card-input:focus::placeholder {
+  color: transparent;
+}
+input.card-input:focus {
+  background-color: rgb(12, 70, 152);
+  color: white;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+button.start{
+  margin-top: 100px;
+  width: 400px;
+  height: 80px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  background-color: rgb(12, 70, 152);
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+button.start:hover{
+  background-color: white;
+  color: rgb(12, 70, 152);
+  border: solid 3px rgb(12, 70, 152);
+  border-radius: 15px;
+}
+/* #game-sec{
+  height: 100vh;
+} */
+#game{
+  /* background-color: lightblue; */
+  width: 90vw;
+  text-align: center;
+}
+#game div {
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  min-width: 15vw;
+  height: 15vw;
+  margin:10px;
+  /* margin:10px; */
+  display: inline-block;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.352);
+}
+.gameBanner{
+  width: 100%;
+  height: 50px;
+  padding: 40px;
+  font-size: 15px;
+}
+.bannerTitle{
+  width: 50%;
+  float: left;
+}
+.scoreTitle{
+  width: 50%;
+  float: right;
+  font-weight: 300;
+}
+.scoreTitle span{
+  color: white;
+  background-color: rgb(12, 70, 152);
+  padding: 8px 13px;
+  border-radius: 9px;
+  letter-spacing: 0px;
+  font-weight: 800;
+}
+.restartContent{
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+}
+.restartButton{
+  width: 50%;
+  float: left;
+}
+.GameHistory{
+  width: 50%;
+  float: right;
+  font-weight: 300;
+  background-color: rgb(217, 217, 217);
+  border-radius: 10px;
+}
+/* .GameHistory p{
+  color: white;
+  background-color: rgb(12, 70, 152);
+  padding: 8px 13px;
+  border-radius: 9px;
+  letter-spacing: 0px;
+  font-weight: 800;
+} */
+button.restartButton{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  background-color: black;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
