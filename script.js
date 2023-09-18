@@ -3,11 +3,13 @@ let input = document.querySelector(".card-input");
 let restartBtn = document.querySelector("#restartGame");
 let gameContainer = document.getElementById("game");
 let scoreP = document.getElementById("score");
+let gameHistory = document.querySelector(".GameHistory");
 let score = 0;
 let colorsClicked = 0;
 let blocksSelected = [];
 let colorsMatched = [];
 let numOfColors = 8; //if no input, enter 8 colors
+let localScoreHistory = JSON.parse(localStorage.getItem("scores")) || [];
 
 initializeGame();
 
@@ -39,6 +41,21 @@ function gameSetup(){
     e.preventDefault();
     restartGame();
   });
+
+  gameHistory = document.querySelector(".GameHistory");
+
+  for (let i = 0; i < localScoreHistory.length; i++) {
+    let scoreItem = document.createElement('p');
+    scoreItem.innerText = localScoreHistory[i].score;
+    gameHistory.appendChild(scoreItem);
+  }
+
+  // retrieve score history from local storage
+  // for (let i = 0; i < localScoreHistory.length; i++) {
+  //   let scoreItem = document.createElement('p');
+  //   scoreItem.innerText = localScoreHistory[i].score;
+  //   gameHistory.appendChild(scoreItem);
+  // }
 }
 
 function startGameHandleEvent() {
@@ -166,6 +183,14 @@ function handleCardClick(event) {
         if(colorsMatched.length === numOfColors){
           // alert("YOU WIN!");
           // restartGame();
+          localScoreHistory.push({ score: `SCORE: ${score} | COLORS: ${numOfColors}`});
+          localStorage.setItem("scores", JSON.stringify(localScoreHistory));
+          console.log(localScoreHistory);
+
+          //temportarily append new score
+          let scoreItem = document.createElement('p');
+          scoreItem.innerText = `SCORE: ${score} | COLORS: ${numOfColors}`;
+          gameHistory.appendChild(scoreItem);
         }
       }
 
