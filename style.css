@@ -155,10 +155,10 @@ button.restartButton{
   border: none;
   background-color: inherit;
 }
-#restartGame:hover{
+/* #restartGame:hover{
   background-color: rgb(217, 217, 217);
   color:black;
-}
+} */
 .GameHistory{
   width: 50%;
   float: right;
