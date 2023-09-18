@@ -8,17 +8,9 @@ body{
   display:flex; 
   flex-direction:column; 
   justify-content:center;
-  /* min-height:100vh; */
   text-align: center;
   align-items: center;
 }
-/* #menu-sec{
-  display:flex; 
-  flex-direction:column; 
-  justify-content:center;
-  text-align: center;
-  align-items: center;
-} */
 .fullHeight{
   min-height:100vh;
   display:flex; 
@@ -42,7 +34,6 @@ body{
 input.card-input{
   width: 90px;
   height: 90px;
-  /* padding: 20px; */
   margin-top: 70px;
   border-radius: 20px;
   border-color: rgb(12, 70, 152);
@@ -58,15 +49,11 @@ input.card-input:focus {
   background-color: rgb(12, 70, 152);
   color: white;
 }
-/* Chrome, Safari, Edge, Opera */
+/* Chrome, Safari, Edge, Opera input styling */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
 textarea:focus, input:focus{
   outline: none;
@@ -87,23 +74,16 @@ button.start:hover{
   background-color: white;
   color: rgb(12, 70, 152);
   border: solid 3px rgb(12, 70, 152);
-  border-radius: 15px;
+  border-radius: 30px;
 }
-/* #game-sec{
-  height: 100vh;
-} */
 #game{
-  /* background-color: lightblue; */
-  /* width: 90vw; */
   text-align: center;
 }
 #game div {
-  /* border: 1px solid black; */
   border-radius: 15px;
   min-width: 12vw;
   height: 12vw;
   margin:10px;
-  /* margin:10px; */
   display: inline-block;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.352);
 }
@@ -155,10 +135,6 @@ button.restartButton{
   border: none;
   background-color: inherit;
 }
-/* #restartGame:hover{
-  background-color: rgb(217, 217, 217);
-  color:black;
-} */
 .GameHistory{
   width: 50%;
   float: right;
@@ -198,7 +174,6 @@ button.restartButton{
     border-radius: 40px;
   }
   #game div {
-    /* border: 1px solid black; */
     border-radius: 25px;
     min-width: 22vw;
     min-height: 22vw;
