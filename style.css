@@ -146,7 +146,7 @@ button.restartButton{
   line-height: 70px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1300px) and (orientation: portrait) {
   .menu-title{
     font-size: 100px;
     font-weight: 700;

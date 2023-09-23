@@ -42,6 +42,7 @@ function startGameHandleEvent() {
   //contians the number of unique colors from user input
   input = document.querySelector(".card-input");
 
+  //remove main menu, add html for game, add restart button, show previous scores
   gameSetup();
 
   gameContainer = document.getElementById("game");
@@ -68,7 +69,7 @@ function gameSetup(){
   document.getElementById("menu-sec").innerHTML = "";
   document.getElementById("game-sec").innerHTML = '<div><div class="gameBanner"><h1 class="bannerTitle">MEMORY GAME</h1><h1 class="scoreTitle">SCORE: <span id="score">0</span></h1></div><div id="game"></div><div class="restartContent"><form action id="restartGame"><button class="restartButton">RESTART</button></form><h1 class="GameHistory">GAME HISTORY</h1></div>';
 
-  //re-initialize variables from new game
+  //re-initialize variables for the new game
   gameContainer = document.getElementById("game");
   scoreP = document.getElementById("score");
   gameHistory = document.querySelector(".GameHistory");
